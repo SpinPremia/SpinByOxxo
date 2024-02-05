@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin by OXXO | Encuesta</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favico.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./img/logo.png" alt="">
+        </nav>
+    </header>
+    <h1 class="responde-y-gana">Responde y gana!</h1>
+    <hr>
+    <div class="container-encuesta">
+        <h3>Pregunta 1:</h3>
+        <p>Como calificarias la dificultad con la que puedes manejar tu cuenta Spin by OXXO</p>
+        <label>
+            <input type="checkbox">
+            Muy facil
+        </label>
+        <div></div>
+        <label>
+            <input type="checkbox">
+            Medianamente facil
+        </label>
+        <div></div>
+        <label>
+            <input type="checkbox">
+            Dificil
+        </label>
+    </div>
+
+    <div class="container-encuesta">
+        <h3>Pregunta 2:</h3>
+        <p>Como consideras el tiempo de respuesta de nuestros colaboradores al atender una solicitud tuya?</p>
+        <label>
+            <input type="checkbox">
+            Rapido
+        </label>
+        <div></div>
+        <label>
+            <input type="checkbox">
+            Medianamente rapido
+        </label>
+        <div></div>
+        <label>
+            <input type="checkbox">
+            Muy lento
+        </label>
+    </div>
+
+    <div class="container-encuesta">
+        <h3>Pregunta 3:</h3>
+        <p>Con que frecuencia depositas o transfieres fondos a tu cuenta Spin by OXXO?</p>
+        <label>
+            <input type="checkbox">
+            Una vez a la semana
+        </label>
+        <div></div>
+        <label>
+            <input type="checkbox">
+            Una vez cada quince dias
+        </label>
+        <div></div>
+        <label>
+            <input type="checkbox">
+            Una vez al mes
+        </label>
+    </div>
+
+    <div class="container-encuesta">
+        <h3>Pregunta 4:</h3>
+        <p>Te gustaria poder invertir tu dinero en Spin by OXXO de forma segura y con una ganancia superior a cualquier
+            otro banco o fintech?</p>
+        <label>
+            <input type="checkbox">
+            Por supuesto
+        </label>
+        <div></div>
+        <label>
+            <input type="checkbox">
+            No, no me gusta invertir
+        </label>
+    </div>
+
+    <div class="container-encuesta">
+        <h3>Pregunta 5:</h3>
+        <p>Cual es el saldo actual de tu cuenta spin by OXXO?</p>
+        <span class="saldo-actual">$</span><input type="text" id="saldoActualInput">
+    </div>
+
+    <div class="container-encuesta">
+        <h3>Pregunta 6:</h3>
+        <p>Que mejorarias de tu cuenta Spin by OXXO?</p>
+        <label>
+            <input type="checkbox">
+            Servicio
+        </label>
+        <div></div>
+        <label>
+            <input type="checkbox">
+            La app
+        </label>
+        <div></div>
+        <label>
+            <input type="checkbox">
+            Promos
+        </label>
+        <div></div>
+        <label>
+            <input type="checkbox">
+            <span class="checkbo"></span>
+            Nada
+        </label>
+
+        <div class="container-enviar-encuesta">
+            <button onclick="verificarCuenta()">Enviar encuesta</button>
+        </div>
+
+
+
+    </div>
+    <div>
+        <div class="container-footer">
+            <img src="./img/footer.png" alt="">
+        </div>
+        <script src="./js/encuesta.js"></script>
+</body>
+<div class="alert" id="Alert">
+    <div class="container-alerta">
+        <h2>¡Gracias por completar la encuesta!</h2>
+        <p>Inicia sesión para canjear tus puntos Spin Premia.</p>
+        <button onclick="window.location.href = './win.html';">Iniciar sesión</button>
+    </div>
+
+</html>

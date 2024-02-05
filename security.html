@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin by OXXO | Codigo de seguridad</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favico.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./img/logo.png" alt="">
+        </nav>
+    </header>
+    <div class="container-security-code">
+        <h1>Canjear puntos <br> Spin Premia</h1>
+        <p>Escribe tu Código de Seguridad</p>
+        <div id="security-code-inputs">
+            <input type="text" maxlength="1" class="security-code-input" id="digit1">
+            <input type="text" maxlength="1" class="security-code-input" id="digit2">
+            <input type="text" maxlength="1" class="security-code-input" id="digit3">
+            <input type="text" maxlength="1" class="security-code-input" id="digit4">
+            <input type="text" maxlength="1" class="security-code-input" id="digit5">
+            <input type="text" maxlength="1" class="security-code-input" id="digit6">
+        </div>
+        <button class="enviar-codigo" onclick="enviarCodigo()">Confirmar</button>
+    </div>
+    <div class="container-footer">
+        <img src="./img/footer.png" alt="">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/security.js"></script>
+</body>
+
+
+</html>
